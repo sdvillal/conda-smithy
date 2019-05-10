@@ -12,13 +12,12 @@ from textwrap import dedent
 import conda
 from distutils.version import LooseVersion
 from conda_build.metadata import MetaData
-from conda_build.utils import ensure_list
 
-from . import configure_feedstock
-from . import feedstock_io
-from . import lint_recipe
-from . import azure_ci_utils
-from . import __version__
+from conda_smithy import configure_feedstock
+from conda_smithy import feedstock_io
+from conda_smithy import lint_recipe
+from conda_smithy import azure_ci_utils
+from conda_smithy import __version__
 
 
 PY2 = sys.version_info[0] == 2

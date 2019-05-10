@@ -119,7 +119,6 @@ def create_github_repo(args):
         feedstock_name = meta.name()
 
     gh = Github(token)
-    user_or_org = None
     if args.user is not None:
         pass
         # User has been defined, and organization has not.

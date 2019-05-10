@@ -5,10 +5,8 @@ import requests
 import time
 import sys
 
-import ruamel.yaml
-
-from . import github
-from .utils import update_conda_forge_config
+from conda_smithy import github_services as github
+from conda_smithy.utils import update_conda_forge_config
 
 
 # https://circleci.com/docs/api#add-environment-variable
